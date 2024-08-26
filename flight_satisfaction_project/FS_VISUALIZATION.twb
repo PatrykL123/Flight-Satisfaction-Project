@@ -1,0 +1,1885 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0711.1636                               -->
+<workbook original-version='18.1' source-build='2024.2.1 (20242.24.0711.1636)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Flight satisfaction predictions' inline='true' name='federated.09p6ilr1wjnklz11bkdtd02frnza' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='flight_satisfaction' name='textscan.11sf9i50f03ra91bejpld00zkj8z'>
+            <connection class='textscan' directory='C:/Users/sokoo/OneDrive/Desktop' filename='flight_satisfaction.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.11sf9i50f03ra91bejpld00zkj8z' name='flight_satisfaction.csv' table='[flight_satisfaction#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='pl_PL'>
+            <column datatype='integer' name='Gender' ordinal='0' />
+            <column datatype='integer' name='Customer_Type' ordinal='1' />
+            <column datatype='integer' name='Type_of_travel' ordinal='2' />
+            <column datatype='integer' name='Business_Class' ordinal='3' />
+            <column datatype='integer' name='Economy_Class' ordinal='4' />
+            <column datatype='integer' name='Economy_Plus_Class' ordinal='5' />
+            <column datatype='integer' name='Departure_Delay' ordinal='6' />
+            <column datatype='integer' name='Arrival_Delay' ordinal='7' />
+            <column datatype='integer' name='Time_Convenience' ordinal='8' />
+            <column datatype='integer' name='Ease_of_onl_booking' ordinal='9' />
+            <column datatype='integer' name='Check_in_Service' ordinal='10' />
+            <column datatype='integer' name='Online_Boarding' ordinal='11' />
+            <column datatype='integer' name='Gate_Location' ordinal='12' />
+            <column datatype='integer' name='On_board_service' ordinal='13' />
+            <column datatype='integer' name='Leg_Room_service' ordinal='14' />
+            <column datatype='integer' name='Cleanliness' ordinal='15' />
+            <column datatype='integer' name='In_flight_servie' ordinal='16' />
+            <column datatype='integer' name='in_fligh_wifi_service' ordinal='17' />
+            <column datatype='integer' name='in_flight_entertainment' ordinal='18' />
+            <column datatype='integer' name='Baggage_Handling' ordinal='19' />
+            <column datatype='real' name='Probability' ordinal='20' />
+            <column datatype='integer' name='Prediction' ordinal='21' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.11sf9i50f03ra91bejpld00zkj8z' name='flight_satisfaction.csv' table='[flight_satisfaction#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='pl_PL'>
+            <column datatype='integer' name='Gender' ordinal='0' />
+            <column datatype='integer' name='Customer_Type' ordinal='1' />
+            <column datatype='integer' name='Type_of_travel' ordinal='2' />
+            <column datatype='integer' name='Business_Class' ordinal='3' />
+            <column datatype='integer' name='Economy_Class' ordinal='4' />
+            <column datatype='integer' name='Economy_Plus_Class' ordinal='5' />
+            <column datatype='integer' name='Departure_Delay' ordinal='6' />
+            <column datatype='integer' name='Arrival_Delay' ordinal='7' />
+            <column datatype='integer' name='Time_Convenience' ordinal='8' />
+            <column datatype='integer' name='Ease_of_onl_booking' ordinal='9' />
+            <column datatype='integer' name='Check_in_Service' ordinal='10' />
+            <column datatype='integer' name='Online_Boarding' ordinal='11' />
+            <column datatype='integer' name='Gate_Location' ordinal='12' />
+            <column datatype='integer' name='On_board_service' ordinal='13' />
+            <column datatype='integer' name='Leg_Room_service' ordinal='14' />
+            <column datatype='integer' name='Cleanliness' ordinal='15' />
+            <column datatype='integer' name='In_flight_servie' ordinal='16' />
+            <column datatype='integer' name='in_fligh_wifi_service' ordinal='17' />
+            <column datatype='integer' name='in_flight_entertainment' ordinal='18' />
+            <column datatype='integer' name='Baggage_Handling' ordinal='19' />
+            <column datatype='real' name='Probability' ordinal='20' />
+            <column datatype='integer' name='Prediction' ordinal='21' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[flight_satisfaction.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;binary&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;zł&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;pl_PL&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[flight_satisfaction.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer_Type</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Customer_Type]</local-name>
+            <parent-name>[flight_satisfaction.csv]</parent-name>
+            <remote-alias>Customer_Type</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type_of_travel</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Type_of_travel]</local-name>
+            <parent-name>[flight_satisfaction.csv]</parent-name>
+            <remote-alias>Type_of_travel</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Business_Class</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Business_Class]</local-name>
+            <parent-name>[flight_satisfaction.csv]</parent-name>
+            <remote-alias>Business_Class</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Economy_Class</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Economy_Class]</local-name>
+            <parent-name>[flight_satisfaction.csv]</parent-name>
+            <remote-alias>Economy_Class</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Economy_Plus_Class</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Economy_Plus_Class]</local-name>
+            <parent-name>[flight_satisfaction.csv]</parent-name>
+            <remote-alias>Economy_Plus_Class</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Departure_Delay</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Departure_Delay]</local-name>
+            <parent-name>[flight_satisfaction.csv]</parent-name>
+            <remote-alias>Departure_Delay</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Arrival_Delay</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Arrival_Delay]</local-name>
+            <parent-name>[flight_satisfaction.csv]</parent-name>
+            <remote-alias>Arrival_Delay</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time_Convenience</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Time_Convenience]</local-name>
+            <parent-name>[flight_satisfaction.csv]</parent-name>
+            <remote-alias>Time_Convenience</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ease_of_onl_booking</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ease_of_onl_booking]</local-name>
+            <parent-name>[flight_satisfaction.csv]</parent-name>
+            <remote-alias>Ease_of_onl_booking</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Check_in_Service</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Check_in_Service]</local-name>
+            <parent-name>[flight_satisfaction.csv]</parent-name>
+            <remote-alias>Check_in_Service</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Online_Boarding</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Online_Boarding]</local-name>
+            <parent-name>[flight_satisfaction.csv]</parent-name>
+            <remote-alias>Online_Boarding</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gate_Location</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Gate_Location]</local-name>
+            <parent-name>[flight_satisfaction.csv]</parent-name>
+            <remote-alias>Gate_Location</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>On_board_service</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[On_board_service]</local-name>
+            <parent-name>[flight_satisfaction.csv]</parent-name>
+            <remote-alias>On_board_service</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Leg_Room_service</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Leg_Room_service]</local-name>
+            <parent-name>[flight_satisfaction.csv]</parent-name>
+            <remote-alias>Leg_Room_service</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cleanliness</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cleanliness]</local-name>
+            <parent-name>[flight_satisfaction.csv]</parent-name>
+            <remote-alias>Cleanliness</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>In_flight_servie</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[In_flight_servie]</local-name>
+            <parent-name>[flight_satisfaction.csv]</parent-name>
+            <remote-alias>In_flight_servie</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>in_fligh_wifi_service</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[in_fligh_wifi_service]</local-name>
+            <parent-name>[flight_satisfaction.csv]</parent-name>
+            <remote-alias>in_fligh_wifi_service</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>in_flight_entertainment</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[in_flight_entertainment]</local-name>
+            <parent-name>[flight_satisfaction.csv]</parent-name>
+            <remote-alias>in_flight_entertainment</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Baggage_Handling</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Baggage_Handling]</local-name>
+            <parent-name>[flight_satisfaction.csv]</parent-name>
+            <remote-alias>Baggage_Handling</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Probability</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Probability]</local-name>
+            <parent-name>[flight_satisfaction.csv]</parent-name>
+            <remote-alias>Probability</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Prediction</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Prediction]</local-name>
+            <parent-name>[flight_satisfaction.csv]</parent-name>
+            <remote-alias>Prediction</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Arrival_Delay (bin) 2' datatype='integer' name='[Arrival_Delay (bin) 2]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='1' formula='[Arrival_Delay]' peg='0' size='30' />
+      </column>
+      <column caption='Arrival_Delay (bin)' datatype='integer' name='[Arrival_Delay (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='1' formula='[Arrival_Delay]' peg='0' size='15' />
+      </column>
+      <column datatype='integer' name='[Arrival_Delay]' role='measure' type='quantitative' />
+      <column caption='satisfaction label' datatype='string' name='[Calculation_1178254306658971648]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Economy_Class] = 0 THEN &apos;Unsatisfied&apos;&#13;&#10;ELSE &apos;Satisfied&apos; END' />
+      </column>
+      <column caption='prediciton label' datatype='string' name='[Calculation_1178254306664591363]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Prediction] = 0 THEN &apos;Unsatisfied&apos;&#13;&#10;ELSE &apos;Satisfied&apos; END' />
+      </column>
+      <column caption='Departure_Delay (bin) 2' datatype='integer' name='[Departure_Delay (bin) 2]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='1' formula='[Departure_Delay]' peg='0' size='30' />
+      </column>
+      <column caption='Departure_Delay (bin)' datatype='integer' name='[Departure_Delay (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='1' formula='[Departure_Delay]' peg='0' size='15' />
+      </column>
+      <column datatype='integer' name='[Departure_Delay]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='flight_satisfaction.csv' datatype='table' name='[__tableau_internal_object_id__].[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]' role='measure' type='quantitative' />
+      <column caption='satisfaction label business class' datatype='string' name='[satisfaction label (copy) (copy)_1178254306659635202]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Business_Class] = 0 THEN &apos;Unsatisfied&apos;&#13;&#10;ELSE &apos;Satisfied&apos; END' />
+      </column>
+      <column caption='satisfaction label economy plus' datatype='string' name='[satisfaction label (copy)_1178254306659622913]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Economy_Plus_Class] = 0 THEN &apos;Unsatisfied&apos;&#13;&#10;ELSE &apos;Satisfied&apos; END' />
+      </column>
+      <column caption='satisfaction label economy plus (copy)' datatype='string' name='[satisfaction label economy plus (copy)_1178254306675060740]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Economy_Plus_Class] = 0 THEN &apos;Unsatisfied&apos;&#13;&#10;ELSEIF [Economy_Plus_Class] = 1 THEN &apos;Satisfied&apos;&#13;&#10;ELSEIF  [Economy_Class] = 0 THEN &apos;Unsatisfied&apos;&#13;&#10;ELSEIF [Economy_Class] = 1 THEN &apos;Satisfied&apos;&#13;&#10;ELSEIF [Business_Class] = 0 THEN &apos;Unsatisfied&apos;&#13;&#10;ELSEIF [Business_Class] = 1 THEN &apos;Satisfied&apos; END' />
+      </column>
+      <column-instance column='[Calculation_1178254306658971648]' derivation='None' name='[none:Calculation_1178254306658971648:nk]' pivot='key' type='nominal' />
+      <column-instance column='[satisfaction label (copy) (copy)_1178254306659635202]' derivation='None' name='[none:satisfaction label (copy) (copy)_1178254306659635202:nk]' pivot='key' type='nominal' />
+      <column-instance column='[satisfaction label (copy)_1178254306659622913]' derivation='None' name='[none:satisfaction label (copy)_1178254306659622913:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/sokoo/AppData/Local/Temp/TableauTemp/#TableauTemp_08hsezl0pfta3g18jvnzy13e0lp3.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/24/2024 11:40:21 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>0</ordinal>
+              <family>flight_satisfaction.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer_Type</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Customer_Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer_Type</remote-alias>
+              <ordinal>1</ordinal>
+              <family>flight_satisfaction.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Type_of_travel</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Type_of_travel]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Type_of_travel</remote-alias>
+              <ordinal>2</ordinal>
+              <family>flight_satisfaction.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Business_Class</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Business_Class]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Business_Class</remote-alias>
+              <ordinal>3</ordinal>
+              <family>flight_satisfaction.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Economy_Class</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Economy_Class]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Economy_Class</remote-alias>
+              <ordinal>4</ordinal>
+              <family>flight_satisfaction.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Economy_Plus_Class</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Economy_Plus_Class]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Economy_Plus_Class</remote-alias>
+              <ordinal>5</ordinal>
+              <family>flight_satisfaction.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Departure_Delay</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Departure_Delay]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Departure_Delay</remote-alias>
+              <ordinal>6</ordinal>
+              <family>flight_satisfaction.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>280</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Arrival_Delay</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Arrival_Delay]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Arrival_Delay</remote-alias>
+              <ordinal>7</ordinal>
+              <family>flight_satisfaction.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>266</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Time_Convenience</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Time_Convenience]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Time_Convenience</remote-alias>
+              <ordinal>8</ordinal>
+              <family>flight_satisfaction.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ease_of_onl_booking</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Ease_of_onl_booking]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ease_of_onl_booking</remote-alias>
+              <ordinal>9</ordinal>
+              <family>flight_satisfaction.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Check_in_Service</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Check_in_Service]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Check_in_Service</remote-alias>
+              <ordinal>10</ordinal>
+              <family>flight_satisfaction.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Online_Boarding</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Online_Boarding]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Online_Boarding</remote-alias>
+              <ordinal>11</ordinal>
+              <family>flight_satisfaction.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gate_Location</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Gate_Location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gate_Location</remote-alias>
+              <ordinal>12</ordinal>
+              <family>flight_satisfaction.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>On_board_service</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[On_board_service]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>On_board_service</remote-alias>
+              <ordinal>13</ordinal>
+              <family>flight_satisfaction.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Leg_Room_service</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Leg_Room_service]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Leg_Room_service</remote-alias>
+              <ordinal>14</ordinal>
+              <family>flight_satisfaction.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cleanliness</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Cleanliness]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Cleanliness</remote-alias>
+              <ordinal>15</ordinal>
+              <family>flight_satisfaction.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>In_flight_servie</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[In_flight_servie]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>In_flight_servie</remote-alias>
+              <ordinal>16</ordinal>
+              <family>flight_satisfaction.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>in_fligh_wifi_service</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[in_fligh_wifi_service]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>in_fligh_wifi_service</remote-alias>
+              <ordinal>17</ordinal>
+              <family>flight_satisfaction.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>in_flight_entertainment</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[in_flight_entertainment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>in_flight_entertainment</remote-alias>
+              <ordinal>18</ordinal>
+              <family>flight_satisfaction.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Baggage_Handling</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Baggage_Handling]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Baggage_Handling</remote-alias>
+              <ordinal>19</ordinal>
+              <family>flight_satisfaction.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Probability</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Probability]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Probability</remote-alias>
+              <ordinal>20</ordinal>
+              <family>flight_satisfaction.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21995</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Prediction</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Prediction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Prediction</remote-alias>
+              <ordinal>21</ordinal>
+              <family>flight_satisfaction.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_1178254306658971648:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Satisfied&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Unsatisfied&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:satisfaction label (copy) (copy)_1178254306659635202:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Satisfied&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Unsatisfied&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:satisfaction label (copy)_1178254306659622913:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Satisfied&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Unsatisfied&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Poland&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='flight_satisfaction.csv' id='flight_satisfaction.csv_75A547C9C84E4D90A7A7371A293BCB5C'>
+            <properties context=''>
+              <relation connection='textscan.11sf9i50f03ra91bejpld00zkj8z' name='flight_satisfaction.csv' table='[flight_satisfaction#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='pl_PL'>
+                  <column datatype='integer' name='Gender' ordinal='0' />
+                  <column datatype='integer' name='Customer_Type' ordinal='1' />
+                  <column datatype='integer' name='Type_of_travel' ordinal='2' />
+                  <column datatype='integer' name='Business_Class' ordinal='3' />
+                  <column datatype='integer' name='Economy_Class' ordinal='4' />
+                  <column datatype='integer' name='Economy_Plus_Class' ordinal='5' />
+                  <column datatype='integer' name='Departure_Delay' ordinal='6' />
+                  <column datatype='integer' name='Arrival_Delay' ordinal='7' />
+                  <column datatype='integer' name='Time_Convenience' ordinal='8' />
+                  <column datatype='integer' name='Ease_of_onl_booking' ordinal='9' />
+                  <column datatype='integer' name='Check_in_Service' ordinal='10' />
+                  <column datatype='integer' name='Online_Boarding' ordinal='11' />
+                  <column datatype='integer' name='Gate_Location' ordinal='12' />
+                  <column datatype='integer' name='On_board_service' ordinal='13' />
+                  <column datatype='integer' name='Leg_Room_service' ordinal='14' />
+                  <column datatype='integer' name='Cleanliness' ordinal='15' />
+                  <column datatype='integer' name='In_flight_servie' ordinal='16' />
+                  <column datatype='integer' name='in_fligh_wifi_service' ordinal='17' />
+                  <column datatype='integer' name='in_flight_entertainment' ordinal='18' />
+                  <column datatype='integer' name='Baggage_Handling' ordinal='19' />
+                  <column datatype='real' name='Probability' ordinal='20' />
+                  <column datatype='integer' name='Prediction' ordinal='21' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='flight_satisfaction_moddd' inline='true' name='federated.1v1r9650uujyjk136xe171ydt6ya' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='flight_satisfaction_moddd' name='textscan.0j4z5o90ku50ye1b3xx2u139accl'>
+            <connection class='textscan' directory='C:/Users/sokoo/OneDrive/Desktop' filename='flight_satisfaction_moddd.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0j4z5o90ku50ye1b3xx2u139accl' name='flight_satisfaction_moddd.csv' table='[flight_satisfaction_moddd#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='pl_PL'>
+            <column datatype='string' name='customer_type' ordinal='0' />
+            <column datatype='string' name='type_of_travel' ordinal='1' />
+            <column datatype='real' name='probability' ordinal='2' />
+            <column datatype='integer' name='prediction' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0j4z5o90ku50ye1b3xx2u139accl' name='flight_satisfaction_moddd.csv' table='[flight_satisfaction_moddd#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='pl_PL'>
+            <column datatype='string' name='customer_type' ordinal='0' />
+            <column datatype='string' name='type_of_travel' ordinal='1' />
+            <column datatype='real' name='probability' ordinal='2' />
+            <column datatype='integer' name='prediction' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[flight_satisfaction_moddd.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;binary&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;zł&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;pl_PL&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_type]</local-name>
+            <parent-name>[flight_satisfaction_moddd.csv]</parent-name>
+            <remote-alias>customer_type</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction_moddd.csv_91900300F3B5471BAB8AFDF2B15925F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type_of_travel</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[type_of_travel]</local-name>
+            <parent-name>[flight_satisfaction_moddd.csv]</parent-name>
+            <remote-alias>type_of_travel</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction_moddd.csv_91900300F3B5471BAB8AFDF2B15925F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>probability</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[probability]</local-name>
+            <parent-name>[flight_satisfaction_moddd.csv]</parent-name>
+            <remote-alias>probability</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction_moddd.csv_91900300F3B5471BAB8AFDF2B15925F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>prediction</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[prediction]</local-name>
+            <parent-name>[flight_satisfaction_moddd.csv]</parent-name>
+            <remote-alias>prediction</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction_moddd.csv_91900300F3B5471BAB8AFDF2B15925F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Calculation1' datatype='string' name='[Calculation_1178254306713186309]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [prediction] = 1 THEN &apos;Satisfied&apos;&#13;&#10;ELSE &apos;Unsatisfied&apos; END' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='flight_satisfaction_moddd.csv' datatype='table' name='[__tableau_internal_object_id__].[flight_satisfaction_moddd.csv_91900300F3B5471BAB8AFDF2B15925F6]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/sokoo/AppData/Local/Temp/TableauTemp/#TableauTemp_0r3gayu018j2x912tx6r111zebr7.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/24/2024 02:14:46 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>customer_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_type</remote-alias>
+              <ordinal>0</ordinal>
+              <family>flight_satisfaction_moddd.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction_moddd.csv_91900300F3B5471BAB8AFDF2B15925F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>type_of_travel</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[type_of_travel]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>type_of_travel</remote-alias>
+              <ordinal>1</ordinal>
+              <family>flight_satisfaction_moddd.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction_moddd.csv_91900300F3B5471BAB8AFDF2B15925F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>probability</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[probability]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>probability</remote-alias>
+              <ordinal>2</ordinal>
+              <family>flight_satisfaction_moddd.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21977</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction_moddd.csv_91900300F3B5471BAB8AFDF2B15925F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>prediction</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[prediction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>prediction</remote-alias>
+              <ordinal>3</ordinal>
+              <family>flight_satisfaction_moddd.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flight_satisfaction_moddd.csv_91900300F3B5471BAB8AFDF2B15925F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Poland&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='flight_satisfaction_moddd.csv' id='flight_satisfaction_moddd.csv_91900300F3B5471BAB8AFDF2B15925F6'>
+            <properties context=''>
+              <relation connection='textscan.0j4z5o90ku50ye1b3xx2u139accl' name='flight_satisfaction_moddd.csv' table='[flight_satisfaction_moddd#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='pl_PL'>
+                  <column datatype='string' name='customer_type' ordinal='0' />
+                  <column datatype='string' name='type_of_travel' ordinal='1' />
+                  <column datatype='real' name='probability' ordinal='2' />
+                  <column datatype='integer' name='prediction' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Aerage Customer Satisfaction Probability by Travel Class</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Flight satisfaction predictions' name='federated.09p6ilr1wjnklz11bkdtd02frnza' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09p6ilr1wjnklz11bkdtd02frnza'>
+            <column datatype='integer' name='[Business_Class]' role='measure' type='quantitative' />
+            <column caption='satisfaction label' datatype='string' name='[Calculation_1178254306658971648]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Economy_Class] = 0 THEN &apos;Unsatisfied&apos;&#13;&#10;ELSE &apos;Satisfied&apos; END' />
+            </column>
+            <column datatype='integer' name='[Economy_Class]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Economy_Plus_Class]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Probability]' role='measure' type='quantitative' />
+            <column-instance column='[Probability]' derivation='Avg' name='[avg:Probability:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Business_Class]' derivation='None' name='[none:Business_Class:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1178254306658971648]' derivation='None' name='[none:Calculation_1178254306658971648:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Economy_Class]' derivation='None' name='[none:Economy_Class:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Economy_Plus_Class]' derivation='None' name='[none:Economy_Plus_Class:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[satisfaction label (copy) (copy)_1178254306659635202]' derivation='None' name='[none:satisfaction label (copy) (copy)_1178254306659635202:nk]' pivot='key' type='nominal' />
+            <column-instance column='[satisfaction label (copy)_1178254306659622913]' derivation='None' name='[none:satisfaction label (copy)_1178254306659622913:nk]' pivot='key' type='nominal' />
+            <column caption='satisfaction label business class' datatype='string' name='[satisfaction label (copy) (copy)_1178254306659635202]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Business_Class] = 0 THEN &apos;Unsatisfied&apos;&#13;&#10;ELSE &apos;Satisfied&apos; END' />
+            </column>
+            <column caption='satisfaction label economy plus' datatype='string' name='[satisfaction label (copy)_1178254306659622913]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Economy_Plus_Class] = 0 THEN &apos;Unsatisfied&apos;&#13;&#10;ELSE &apos;Satisfied&apos; END' />
+            </column>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.09p6ilr1wjnklz11bkdtd02frnza].[avg:Probability:qk]' field-type='quantitative' max='1.0' min='0.0' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.09p6ilr1wjnklz11bkdtd02frnza].[avg:Probability:qk]' scope='rows' value='Avg Satisfaction Probability' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.09p6ilr1wjnklz11bkdtd02frnza].[avg:Probability:qk]' value='p0%' />
+            <format attr='text-align' field='[federated.09p6ilr1wjnklz11bkdtd02frnza].[avg:Probability:qk]' value='auto' />
+            <format attr='vertical-align' field='[federated.09p6ilr1wjnklz11bkdtd02frnza].[avg:Probability:qk]' value='auto' />
+            <format attr='font-size' field='[federated.09p6ilr1wjnklz11bkdtd02frnza].[avg:Probability:qk]' value='12' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.09p6ilr1wjnklz11bkdtd02frnza].[avg:Probability:qk]' value='p0%' />
+            <format attr='font-weight' field='[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:Calculation_1178254306658971648:nk]' value='bold' />
+            <format attr='font-size' field='[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:Calculation_1178254306658971648:nk]' value='9' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:Economy_Class:qk]' num-steps='2' type='interpolated' />
+            <encoding attr='color' field='[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:Economy_Plus_Class:qk]' num-steps='2' type='interpolated' />
+            <encoding attr='color' field='[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:Business_Class:qk]' num-steps='2' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.09p6ilr1wjnklz11bkdtd02frnza].[avg:Probability:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:Economy_Class:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='0.40000000000000002' mark-alignment='mark-alignment-center' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='true' />
+            <encodings>
+              <color column='[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:Calculation_1178254306658971648:nk]' />
+              <text column='[federated.09p6ilr1wjnklz11bkdtd02frnza].[avg:Probability:qk]' />
+              <text column='[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:Calculation_1178254306658971648:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='9' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.9890055656433105' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:Economy_Plus_Class:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='0.40000000000000002' mark-alignment='mark-alignment-center' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='true' />
+            <encodings>
+              <color column='[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:satisfaction label (copy)_1178254306659622913:nk]' />
+              <text column='[federated.09p6ilr1wjnklz11bkdtd02frnza].[avg:Probability:qk]' />
+              <text column='[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:satisfaction label (copy)_1178254306659622913:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.9890055656433105' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:Business_Class:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='0.40000000000000002' mark-alignment='mark-alignment-center' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='true' />
+            <encodings>
+              <color column='[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:satisfaction label (copy) (copy)_1178254306659635202:nk]' />
+              <text column='[federated.09p6ilr1wjnklz11bkdtd02frnza].[avg:Probability:qk]' />
+              <text column='[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:satisfaction label (copy) (copy)_1178254306659635202:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.9890055656433105' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.09p6ilr1wjnklz11bkdtd02frnza].[avg:Probability:qk]</rows>
+        <cols>([federated.09p6ilr1wjnklz11bkdtd02frnza].[none:Economy_Class:qk] + ([federated.09p6ilr1wjnklz11bkdtd02frnza].[none:Economy_Plus_Class:qk] + [federated.09p6ilr1wjnklz11bkdtd02frnza].[none:Business_Class:qk]))</cols>
+      </table>
+      <simple-id uuid='{94FE7EAC-119D-46C3-819C-09A63F350DC3}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Flight satisfaction predictions' name='federated.09p6ilr1wjnklz11bkdtd02frnza' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09p6ilr1wjnklz11bkdtd02frnza'>
+            <column caption='Arrival_Delay (bin) 2' datatype='integer' name='[Arrival_Delay (bin) 2]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='1' formula='[Arrival_Delay]' peg='0' size='30' />
+            </column>
+            <column datatype='integer' name='[Arrival_Delay]' role='measure' type='quantitative' />
+            <column caption='prediciton label' datatype='string' name='[Calculation_1178254306664591363]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Prediction] = 0 THEN &apos;Unsatisfied&apos;&#13;&#10;ELSE &apos;Satisfied&apos; END' />
+            </column>
+            <column caption='Departure_Delay (bin) 2' datatype='integer' name='[Departure_Delay (bin) 2]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='1' formula='[Departure_Delay]' peg='0' size='30' />
+            </column>
+            <column datatype='integer' name='[Departure_Delay]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Prediction]' role='measure' type='quantitative' />
+            <column-instance column='[Arrival_Delay (bin) 2]' derivation='None' name='[none:Arrival_Delay (bin) 2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1178254306664591363]' derivation='None' name='[none:Calculation_1178254306664591363:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Departure_Delay (bin) 2]' derivation='None' name='[none:Departure_Delay (bin) 2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Prediction]' derivation='None' name='[none:Prediction:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='26' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:Calculation_1178254306664591363:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='27' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:Departure_Delay (bin) 2:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:Calculation_1178254306664591363:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='28' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:Arrival_Delay (bin) 2:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:Calculation_1178254306664591363:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:Prediction:qk]</rows>
+        <cols>([federated.09p6ilr1wjnklz11bkdtd02frnza].[none:Departure_Delay (bin) 2:qk] + [federated.09p6ilr1wjnklz11bkdtd02frnza].[none:Arrival_Delay (bin) 2:qk])</cols>
+        <show-full-range>
+          <column>[federated.09p6ilr1wjnklz11bkdtd02frnza].[Arrival_Delay (bin) 2]</column>
+          <column>[federated.09p6ilr1wjnklz11bkdtd02frnza].[Arrival_Delay (bin)]</column>
+          <column>[federated.09p6ilr1wjnklz11bkdtd02frnza].[Departure_Delay (bin) 2]</column>
+          <column>[federated.09p6ilr1wjnklz11bkdtd02frnza].[Departure_Delay (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{83EC3388-033F-4E5F-9156-CDCF479E8AEF}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='flight_satisfaction_moddd' name='federated.1v1r9650uujyjk136xe171ydt6ya' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1v1r9650uujyjk136xe171ydt6ya'>
+            <column-instance column='[prediction]' derivation='Avg' name='[avg:prediction:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[customer_type]' role='dimension' type='nominal' />
+            <column-instance column='[customer_type]' derivation='None' name='[none:customer_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type_of_travel]' derivation='None' name='[none:type_of_travel:nk]' pivot='key' type='nominal' />
+            <column datatype='integer' name='[prediction]' role='measure' type='quantitative' />
+            <column datatype='string' name='[type_of_travel]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1v1r9650uujyjk136xe171ydt6ya].[none:type_of_travel:nk]'>
+            <groupfilter function='level-members' level='[none:type_of_travel:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1v1r9650uujyjk136xe171ydt6ya].[none:type_of_travel:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1v1r9650uujyjk136xe171ydt6ya].[avg:prediction:qk]' field-type='quantitative' max='1.0' min='0.0' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.1v1r9650uujyjk136xe171ydt6ya].[avg:prediction:qk]' scope='cols' value='Average Satisfaction' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.1v1r9650uujyjk136xe171ydt6ya].[none:customer_type:nk]' value='169' />
+            <format attr='text-format' field='[federated.1v1r9650uujyjk136xe171ydt6ya].[avg:prediction:qk]' value='p0%' />
+            <format attr='text-align' field='[federated.1v1r9650uujyjk136xe171ydt6ya].[avg:prediction:qk]' value='center' />
+            <format attr='vertical-align' field='[federated.1v1r9650uujyjk136xe171ydt6ya].[avg:prediction:qk]' value='center' />
+            <format attr='font-weight' field='[federated.1v1r9650uujyjk136xe171ydt6ya].[avg:prediction:qk]' value='bold' />
+            <format attr='color' field='[federated.1v1r9650uujyjk136xe171ydt6ya].[avg:prediction:qk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1v1r9650uujyjk136xe171ydt6ya].[none:customer_type:nk]' value='128' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1v1r9650uujyjk136xe171ydt6ya].[avg:prediction:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1v1r9650uujyjk136xe171ydt6ya].[avg:prediction:qk]' num-steps='2' palette='blue_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1v1r9650uujyjk136xe171ydt6ya].[avg:prediction:qk]' />
+              <text column='[federated.1v1r9650uujyjk136xe171ydt6ya].[avg:prediction:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='0.5487293004989624' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1v1r9650uujyjk136xe171ydt6ya].[none:customer_type:nk]</rows>
+        <cols>[federated.1v1r9650uujyjk136xe171ydt6ya].[avg:prediction:qk]</cols>
+      </table>
+      <simple-id uuid='{599D2C55-3529-4ABD-83BF-57684EF4A9BF}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Story 1' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' italic='true'>Flight Passengers Satisfaction</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='964' maxwidth='916' minheight='964' minwidth='916' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98254' x='873' y='830'>
+            <zone h='3423' id='3' type-v2='title' w='98254' x='873' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98254' x='873' y='4253' />
+            <zone h='84440' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98254' x='873' y='14730'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Passenger Satisfaction by Travel Class ' captured-sheet='Sheet 1' id='1' />
+                  <story-point caption='Conclusions' captured-sheet='' id='3' />
+                  <story-point caption='Impact of Delays on Passenger Satisfaction' captured-sheet='Sheet 2' id='2'>
+                    <capturedDeltas>
+                      <worksheet name='Sheet 2'>
+                        <style delta-type='added'>
+                          <style-rule element='axis'>
+                            <format attr='title' class='0' field='[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:Prediction:qk]' scope='rows' value='Satisfaction Prediction' />
+                            <format attr='title' class='0' field='[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:Arrival_Delay (bin) 2:qk]' scope='cols' value='Arrival_Delay ' />
+                            <format attr='title' class='0' field='[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:Departure_Delay (bin) 2:qk]' scope='cols' value='Departure_Delay ' />
+                          </style-rule>
+                        </style>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Conclusions' captured-sheet='' id='4' />
+                  <story-point caption='Average Satisfaction by Customer Type ' captured-sheet='Sheet 3' id='5' />
+                  <story-point caption='Conclusions' captured-sheet='' id='6' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{1E31CCFF-E7B9-4EE0-B22E-10FE24190877}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:Calculation_1178254306658971648:nk]' type='color' />
+            <card pane-specification-id='5' param='[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:satisfaction label (copy) (copy)_1178254306659635202:nk]' type='color' />
+            <card pane-specification-id='4' param='[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:satisfaction label (copy)_1178254306659622913:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:Calculation_1178254306658971648:nk]</field>
+            <field>[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:satisfaction label (copy) (copy)_1178254306659635202:nk]</field>
+            <field>[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:satisfaction label (copy)_1178254306659622913:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B650E835-D1A9-4698-AEC8-5F2946E7D7FF}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='27' param='[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:Calculation_1178254306664591363:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.09p6ilr1wjnklz11bkdtd02frnza].[avg:Prediction:qk]</field>
+            <field>[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:Arrival_Delay (bin) 2:ok]</field>
+            <field>[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:Arrival_Delay (bin):ok]</field>
+            <field>[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:Arrival_Delay:qk]</field>
+            <field>[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:Calculation_1178254306664591363:nk]</field>
+            <field>[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:Departure_Delay (bin) 2:ok]</field>
+            <field>[federated.09p6ilr1wjnklz11bkdtd02frnza].[none:Departure_Delay:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{66A6BE70-4564-48AB-A335-A739F53536E6}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1v1r9650uujyjk136xe171ydt6ya].[none:type_of_travel:nk]' type='filter' />
+            <card pane-specification-id='1' param='[federated.1v1r9650uujyjk136xe171ydt6ya].[avg:prediction:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1v1r9650uujyjk136xe171ydt6ya].[avg:prediction:qk]</field>
+            <field>[federated.1v1r9650uujyjk136xe171ydt6ya].[avg:probability:qk]</field>
+            <field>[federated.1v1r9650uujyjk136xe171ydt6ya].[none:Calculation_1178254306713186309:nk]</field>
+            <field>[federated.1v1r9650uujyjk136xe171ydt6ya].[none:customer_type:nk]</field>
+            <field>[federated.1v1r9650uujyjk136xe171ydt6ya].[none:prediction:qk]</field>
+            <field>[federated.1v1r9650uujyjk136xe171ydt6ya].[none:type_of_travel:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D66039DE-3AF9-4C80-B937-44B513B74700}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{4A6BCE90-436A-4303-ADAF-B4D5EF371C78}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+      AElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Story 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

@@ -1,0 +1,25 @@
+Field,Description
+Gender,Gender of the passenger 0 - Male, 1 - Female
+Customer Type,Type of airline customer 0 - First time, 1 - Returning
+Type of Travel,Purpose of the flight  0 - Personal, 1 - Business
+Economy Class - Travel class in the airplane for the passenger seat 0 - Fasle, 1 - True
+Economy Plus Class - Travel class in the airplane for the passenger seat 0 - False, 1 - True
+Business Class - Travel class in the airplane for the passenger seat 0 - False, 1 - True
+Flight Distance,Flight distance in miles
+Departure Delay,Flight departure delay in minutes
+Arrival Delay,Flight arrival delay in minutes
+Departure and Arrival Time Convenience,"Satisfaction level with the convenience of the flight departure and arrival times from 1 (lowest) to 5 (highest) 
+Ease of Online Booking,"Satisfaction level with the online booking experience from 1 (lowest) to 5 (highest) 
+Check-in Service,"Satisfaction level with the check-in service from 1 (lowest) to 5 (highest) 
+Online Boarding,"Satisfaction level with the online boarding experience from 1 (lowest) to 5 (highest) 
+Gate Location,"Satisfaction level with the gate location in the airport from 1 (lowest) to 5 (highest) 
+On-board Service,"Satisfaction level with the on-boarding service in the airport from 1 (lowest) to 5 (highest) 
+Food and Drink,"Satisfaction level with the food and drinks on the airplane from 1 (lowest) to 5 (highest)
+Seat Comfort,"Satisfaction level with the comfort of the airplane seat from 1 (lowest) to 5 (highest) 
+Leg Room Service,"Satisfaction level with the leg room of the airplane seat from 1 (lowest) to 5 (highest) 
+Cleanliness,"Satisfaction level with the cleanliness of the airplane from 1 (lowest) to 5 (highest) 
+In-flight Service,"Satisfaction level with the in-flight service from 1 (lowest) to 5 (highest) 
+In-flight Wifi Service,"Satisfaction level with the in-flight Wifi service from 1 (lowest) to 5 (highest) 
+In-flight Entertainment,"Satisfaction level with the in-flight entertainment from 1 (lowest) to 5 (highest) 
+Baggage Handling,"Satisfaction level with the baggage handling from the airline from 1 (lowest) to 5 (highest)
+Satisfaction,Overall satisfaction level with the airline 0 - Unsatisfied, 1 - Satisfied
